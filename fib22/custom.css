@@ -20,7 +20,7 @@
 .reveal h6 {
     margin: 0 0 20px 0;
     color: green;
-    font-family: pixel;
+    #font-family: pixel;
     line-height: 0.9em;
     letter-spacing: 0.02em;
     text-shadow: 2px 2px 5px black;
