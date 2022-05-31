@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>FIB 2022</title>
+<meta name="author" content="Carlos Henrique G. Paulino"/>
+<meta name="description" content="Debate de como a pandemia impactou nos processos colaborativos e como o desafio do distanciamento social e uso mais intenso da internet se transformou em oportunidade para discutir a governança democrática. A partir do problema da dependência das bigtechs para utilizar serviços de web as/os palestrantes irão apresentar alternativas para lidar com as adversidades do atual cenário, em especial o uso de software livre e a apropriação de metodologias corporativas para uso em projetos comunitários."/>
+<meta name="keywords" content="gpl, floss, free software"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/theme/blood.css" id="theme"/>
+
+<link rel="stylesheet" href="custom.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>FIB 2022</h1><h2>Desafios no desenvolvimento e sustentabilidade de plataformas colaborativas em software livre</h2><h3> Carlos Henrique G. Paulino</h3><p>online: <a href="https://github.io/chgp/fib2022">https://github.io/chgp/fib2022</a></p>
+</section>
+
+<section>
+<section id="slide-org7ba3b0b">
+<h2 id="org7ba3b0b">Apresentação - resumo</h2>
+<p>
+Forum da Internet Brasil 2022 - Natal - RN - Brasil Debate de como a pandemia
+impactou nos processos colaborativos e como o desafio do distanciamento social e
+uso mais intenso da internet se transformou em oportunidade para discutir a
+governança democrática. A partir do problema da dependência das bigtechs para
+utilizar serviços de web as/os palestrantes irão apresentar alternativas para
+lidar com as adversidades do atual cenário, em especial o uso de software livre
+e a apropriação de metodologias corporativas para uso em projetos comunitários.
+</p>
+</section>
+<section id="slide-org363d86d">
+<h3 id="org363d86d">mesa - participantes</h3>
+<ul>
+<li>Adriana Veloso, aka Drica - Estúdio Livre / UNB</li>
+<li>Beth de Oxum - Radio Amnésia</li>
+<li>Carlos Henrique Paulino, aka  Ceagá - Rhizomatica / UFMG</li>
+<li>Fabiane Balvedi</li>
+<li>Jean Habib - Jhabib / Colmena</li>
+<li>Nils Brock - DWA</li>
+
+</ul>
+</section>
+<section id="slide-orgcdcc193" data-background="rgb(80,20,0)">
+<h3 id="orgcdcc193">Objetivos e conteúdos do workshop</h3>
+<p>
+O objetivo geral da atividade é debater soluções alternativas às big techs na
+gestão descentralizada de iniciativas e organizações, com ênfase no uso de
+software livre como propulsor de práticas colaborativas que visam promover
+modelos de governança democrática. Com o intuito de debater o conceito de
+inovação democrática digital serão apresentadas iniciativas que resultaram do
+cenário adverso da pandemia. Como estudo de caso será avaliado o projeto
+Colmena, iniciativa governamental realizada pelo Ministério para Cooperação e
+Desenvolvimento da Alemanha em parceria com a Deutsche Welle Akademie. A
+perspectiva do setor empresarial será abordada a partir da auto gestão (self
+management) e apropriação de metodologias corporativas e soluções para realizar
+o que uma fábrica de software executa com o uso de sistemas de gerenciamento
+proprietários, aplicando filosofias e metodologias do software livre. O terceiro
+setor vai contribuir demonstrando como é possível aplicar a governança
+democrática e colaborativa em processos de cocriação, que utilizam a internet
+como base de organização. Sobretudo irá contribuir também com a experiência da
+diversidade enquanto fator de êxito em soluções que dialogam com diferentes
+culturas e costumes. Por fim, estimular discussões para contribuir nos conceitos
+como a governança colaborativa, inteligência coletiva, inovações democráticas
+digitais e a importância do uso de infraestruturas éticas (hosting), dentre
+outras questões. Contando com especialistas destas áreas com vivência
+internacional, a mesa redonda busca contribuir com o debate sobre alternativas
+criativas e sustentáveis às big techs.
+</p>
+
+</section>
+<section id="slide-orgce2cd85">
+<h3 id="orgce2cd85">Relevância do tema para a Governança da Internet</h3>
+<p>
+A organização descentralizada da internet é um debate constante. A web é
+resultado direto de um licenciamento aberto. O uso do software já foi um debate
+central no contexto dos fóruns de governança da internet, entretanto o domínio
+das big techs e seu modelo neoliberal de exploração fizeram com que o debate
+sobre alternativas a este modelo ficasse em segundo plano. Os direitos humanos e
+princípios como a liberdade de expressão e privacidade estão em constante risco
+diante dos avanços autoritários e o domínio das big tech em seu modelo de
+negócio baseado em mineração de dados. Iniciativas que promovem a construção de
+uma bem coletivo e preservação de direitos digitais devem ser valorizadas. Neste
+contexto é relevante para as discussões de Governança da Internet identificar
+melhores práticas na promoção destes princípios. Por ser um projeto cujo DNA
+está calcado na diversidade da equipe de desenvolvedores, passando por
+organizações não governamentais de diversos países e meios comunitários - em
+especial rádios em zonas remotas - considera-se o debate de extrema relevância
+para o FIB. No quesito inovação a mesa discutirá também a presença ou não do
+aplicativo em lojas comerciais. Por se tratar de um PWA (progressive web app) é
+uma solução que funciona tanto online quanto offline em ambientes móveis de
+desktop. Por ser projetado para ambientes de baixa conectividade a iniciativa
+contempla ainda o princípio da universalidade de acesso. Trabalhando com o
+conceito de privacidade por padrão, o aplicativo preza pela segurança da
+informação e a proteção de dados dos participantes. Adotando protocolos
+internacionais como o Dublin Core para seus metadados garante a
+interoperabilidade dos conteúdos da plataforma. O envolvimento de designers de
+interação desde o início do desenvolvimento assegura ainda não apenas a
+funcionalidade do sistema, como sua usabilidade e experiência de uso.
+</p>
+
+
+</section>
+<section id="slide-org874c9c6">
+<h3 id="org874c9c6">Forma de adequação da metodologia proposta</h3>
+<p>
+A mesa redonda está estruturada de forma a incentivar o debate com o público a
+partir das experiência das/os palestrantes e as comunidades envolvidas no
+processo de cocriação do software livre colmena. A atividade iniciará com um
+vídeo contendo o depoimento de diversos representantes da comunidades da África
+e América Latina que cocriaram o projeto Colmena (5 minutos). Em seguida cada um
+dos palestrantes irá expor entre 10 e 15 minutos suas respectivas experiências
+(total máximo 1 hora). Por fim, será feira uma demonstração do software
+convidando os participantes a interagir diretamente com a ferramenta (5
+minutos). O bate papo e a interação com o público presente e remoto será exibida
+enquanto as palestrantes escutam e respondem as questões da audiência (20
+minutos).
+</p>
+
+</section>
+<section id="slide-org8251535">
+<h3 id="org8251535">Engajamento da audiência presencial e remota</h3>
+<p>
+Uma vez que a mesa redonda irá debater a governança colaborativa a partir do
+caso de uso do software livre colmena o engajamento se dará por meio da própria
+plataforma a partir de uma sala de bate papo criada especificamente com a
+finalidade de representar a interação durante o FIB. Serão todos convidados a
+conhecer as comunidades que integram o projeto assim como a troca de experiência
+com eles a partir de comentários sobre os processos de publicações da
+plataforma.
+</p>
+
+</section>
+<section id="slide-org68fda6b">
+<h3 id="org68fda6b">Resultados pretendidos</h3>
+<p>
+Como efeito direto da atividade busca-se discutir sobre sustentabilidade de iniciativas de software livre, comunicação comunitária e os desafios de sua manutenção. Além disso a mesa redonda tem como objetivo promover a interação entre iniciativas de mídia que promovem a diversidade, os direitos humanos e a liberdade de expressão.
+</p>
+</section>
+<section id="slide-org80bf4c4">
+<h3 id="org80bf4c4">Relação com os prinícipios do decálogo</h3>
+<p>
+Governança democrática e colaborativa
+</p>
+</section>
+<section id="slide-org0f90df3">
+<h3 id="org0f90df3">Temas do workshop</h3>
+<p>
+IACO – Acesso e conectividade | IACO – Redes comunitárias | IACO – Redes e infraestrutura |
+</p>
+</section>
+<section id="slide-org57eaa5c">
+<h3 id="org57eaa5c">Como a proposta integrará os aspectos de diversidade</h3>
+<p>
+Com a participação por meio de testemunho de integrantes de mídias comunitárias da África e America Latina a mesa também preza pela diversidade de seus palestrantes tanto em termos de gênero, raça e regiões do Brasil.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd9e5c6e">
+<h2 id="orgd9e5c6e">🍯 Estudo de caso</h2>
+
+<div id="org45ebc9c" class="figure">
+<p><img src="./img/logo_colmena.png" alt="logo_colmena.png" />
+</p>
+</div>
+</section>
+<section id="slide-org403dc4e">
+<h3 id="org403dc4e">Colmena</h3>
+<p>
+Em tempos de crise, dispor de informações confiáveis salva vidas.
+Como podemos garantir que os meio de comunicação locais produzam informação em tempos perturbados?
+DW Akademie associada de REDES A.C lançam Colmena - uma solução de código aberto para os meios locais e comunitários
+</p>
+
+<ul>
+<li>📼 Vídeo de 5 minutos depoimentos colmena</li>
+
+</ul>
+
+</section>
+<section id="slide-orge1cd67b" data-background="rgb(0,0,0)">
+<h3 id="orge1cd67b">HERMES</h3>
+<p>
+High-frequency Emergency and Rural Multimedia Exchange System
+</p>
+
+<ul>
+<li>📼 <a href="https://vimeo.com/398331581?embedded=true&amp;source=vimeo_logo&amp;owner=16348054">https://vimeo.com/398331581?embedded=true&amp;source=vimeo_logo&amp;owner=16348054</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdf90ce9">
+<h2 id="orgdf90ce9">👱💭 - Desejo - desenho - gestão</h2>
+<ul class="fragment frag-style">
+<li>Requisitos -&gt; desenho -&gt; viabilidade</li>
+<li class="trans"><code>[-]</code> Ferramentas autogestionadas
+<ul>
+<li class="on"><code>[X]</code> Gitlab</li>
+<li class="off"><code>[&#xa0;]</code> prototipação</li>
+<li class="off"><code>[&#xa0;]</code> Flowcharts</li>
+
+</ul></li>
+<li class="on"><code>[X]</code> publicar códigos gerados em licenças livres</li>
+<li class="off"><code>[&#xa0;]</code> Dev cíclico</li>
+
+</ul>
+</section>
+<section id="slide-orgaacf021">
+<h3 id="orgaacf021">💭 - Requisitos</h3>
+<ul>
+<li class="off"><code>[&#xa0;]</code> (Co)Existir além das lojas de aplicativos comerciais</li>
+<li class="off"><code>[&#xa0;]</code> toolkit multimidia com sincronização em nuvem</li>
+<li class="off"><code>[&#xa0;]</code> capacidades de federação</li>
+<li class="off"><code>[&#xa0;]</code> capacidades multimídia</li>
+<li class="off"><code>[&#xa0;]</code> Conferência Web RTC</li>
+<li class="off"><code>[&#xa0;]</code> escalabilidade para instâncias com grande capacidade de usuarios</li>
+<li class="off"><code>[&#xa0;]</code> multiusuário, multi grupo (medias/ honeycombs)</li>
+<li class="off"><code>[&#xa0;]</code> compartilhamento interno/público,</li>
+
+</ul>
+<aside class="notes">
+nil
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd8c1341">
+<h2 id="orgd8c1341">🏃 - Desafios x complexidade</h2>
+<ul>
+<li>políticas</li>
+<li>requisitos</li>
+<li>interesses</li>
+
+</ul>
+</section>
+<section id="slide-orgce60c7b">
+<h3 id="orgce60c7b">Caminhos, métodos</h3>
+<ul>
+<li>Modelos corporativos ágeis x Blitzkrieg (XGH🐴)</li>
+<li>Equipes pequenas, outros papéis devem ser assumidos - &gt; polivalencia</li>
+<li>Constante realimentação dos requisitos e desenhos e feedbacks</li>
+<li>O desenho é volátil</li>
+
+</ul>
+</section>
+
+</section>
+<section id="slide-org970c440">
+<h3 id="org970c440">Pressupostos</h3>
+<ul>
+<li class="off"><code>[&#xa0;]</code> Segurança</li>
+<li class="off"><code>[&#xa0;]</code> Design</li>
+<li class="off"><code>[&#xa0;]</code> Desenvolvimento</li>
+<li class="off"><code>[&#xa0;]</code> Teste</li>
+
+</ul>
+</section>
+<section id="slide-org1c1bf3b">
+<h3 id="org1c1bf3b">Modelo integrado Catedral &lt;-&gt; Bazar</h3>
+<ul>
+<li class="off"><code>[&#xa0;]</code> Modelo bazar  equipe pequena, metodologia catedral?</li>
+<li class="off"><code>[&#xa0;]</code> 20 anos do modelo de ESR</li>
+<li class="off"><code>[&#xa0;]</code> ambientes rígidos corporativos adotaram métodos ágeis, mais iterativos</li>
+<li class="off"><code>[&#xa0;]</code> contribuição para projetos de interesse -&gt;</li>
+
+</ul>
+<aside class="notes">
+<p>
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-47240-5_14#chapter-info">https://link.springer.com/chapter/10.1007/978-3-030-47240-5_14#chapter-info</a>
+How the Cathedral Embraced the Bazaar, and the Bazaar Became a Cathedral 5 de maio de 2020
+Terhi Kilamo, Valentina Lenarduzzi, Tuukka Ahoniemi, Ari Jaaksi, Jurka Rahikkala &amp; Tommi Mikkonen 
+</p>
+
+</aside>
+</section>
+<section id="slide-org9f40e8e">
+<h3 id="org9f40e8e">infra auto gestao</h3>
+<ul>
+<li class="off"><code>[&#xa0;]</code> evitar o uso de infraestrutura de terceiros, big techs
+<ul>
+<li class="off"><code>[&#xa0;]</code> datacenters?</li>
+
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Infraestrutura de dev e deploy próprios</li>
+
+</ul>
+
+</section>
+<section id="slide-orga18fe70">
+<h3 id="orga18fe70">Manutenção código</h3>
+<p>
+Manutenção equipe, RH, admin
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgaab3073">
+<h2 id="orgaab3073">🔨 Métodos</h2>
+<ul>
+<li class="off"><code>[&#xa0;]</code> agile - XGH
+<ul>
+<li class="off"><code>[&#xa0;]</code> Transparência: common design patterns,  fácil entendimento de 3os.</li>
+<li class="off"><code>[&#xa0;]</code> Inspeção: Inspecionar as novas versões afim de  evitar retrocessos.</li>
+<li class="off"><code>[&#xa0;]</code> Adaptação: Fazer ajuste o mais breve possível para minimizar desvios e erros.</li>
+
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> SCRUMbiarra, uso de metodologias de engenharia de software de forma crítica</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orged8ca99">
+<h2 id="orged8ca99">💸 Sustentabilidade</h2>
+<ul>
+<li class="off"><code>[&#xa0;]</code> Interesse comunitário</li>
+<li class="off"><code>[&#xa0;]</code> Participação coletiva</li>
+<li class="off"><code>[&#xa0;]</code> Patrocinio</li>
+<li class="off"><code>[&#xa0;]</code> Modelos de monetização</li>
+<li class="off"><code>[&#xa0;]</code> Manutenção do desenvolvimento</li>
+<li class="off"><code>[&#xa0;]</code> Manutenção de infraestrutura</li>
+
+</ul>
+</section>
+<section id="slide-orgc2009fc">
+<h3 id="orgc2009fc">💰💻 Manutenção do código</h3>
+</section>
+<section id="slide-org09aacb1">
+<h3 id="org09aacb1">💰🖧 Manutenção de infra estruturas</h3>
+<ul>
+<li class="off"><code>[&#xa0;]</code> Modelo de nuvem é de certa forma centralizado</li>
+<li class="off"><code>[&#xa0;]</code> Quem mantém as nuvens?</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga0fdb8a">
+<h2 id="orga0fdb8a">🏁 Fim - Obrigado !</h2>
+<p>
+🗿Carlos Henrique G. Paulino 
+</p>
+
+<p>
+📧 chgp at riseup.net
+</p>
+
+<p>
+➤ @ceaga
+</p>
+
+<p>
+🐘 @ceaga
+</p>
+
+</section>
+<section id="slide-org8015ddf">
+<h3 id="org8015ddf">🏁 Referencias:</h3>
+<ul>
+<li class="off"><code>[&#xa0;]</code> Kilamo, T., Lenarduzzi, V., Ahoniemi, T., Jaaksi, A., Rahikkala, J., Mikkonen, T. (2020). How the Cathedral Embraced the Bazaar, and the Bazaar Became a Cathedral. In: Ivanov, V., Kruglov, A., Masyagin, S., Sillitti, A., Succi, G. (eds) Open Source Systems. OSS 2020. IFIP Advances in Information and Communication Technology, vol 582. Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-47240-5_14">https://doi.org/10.1007/978-3-030-47240-5_14</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+width: 1000,
+height: 700,
+margin: 0.20,
+minScale: 0.20,
+maxScale: 3.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+]
+
+});
+</script>
+</body>
+</html>
